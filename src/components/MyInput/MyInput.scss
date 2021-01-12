@@ -1,0 +1,21 @@
+.my-input-wrapper {
+    display: flex;
+    height: 0.84rem;
+    width: 100%;
+    line-height: 0.84rem;
+    align-items: center;
+    overflow: hidden;
+    .label {
+        width: 1.2rem;
+        height: 100%;
+        margin-right: 0.2rem;
+    }
+    .my-input-item {
+        flex: auto;
+        height: 100%;
+        border: none;
+        outline: none;
+        font-size: 0.28rem;
+        padding: 0 0.2rem;
+    }
+}

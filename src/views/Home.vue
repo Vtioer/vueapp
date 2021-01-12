@@ -10,6 +10,8 @@ export default {
 </script>
 <style lang="scss" scoped>
 .home {
+  height: 100%;
+  width: 100%;
   font-size: 0.1rem;
 }
 </style>

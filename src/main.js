@@ -2,10 +2,10 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import customComps from '@/components'
+import customComps from '@/components';
 
-Vue.use(customComps)
-Vue.config.productionTip = false
+Vue.use(customComps);
+Vue.config.productionTip = false;
 
 const setHtmlFontSize = () => {
   const htmlDom = document.documentElement;

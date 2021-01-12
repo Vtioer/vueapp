@@ -1,0 +1,22 @@
+.user-login-page {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.login-text {
+    flex: none;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 0.48rem;
+    text-align: center;
+}
+.login-form {
+    flex: none;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 0.4rem;
+}

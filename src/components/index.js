@@ -1,7 +1,11 @@
 import MyHeader from '@/components/MyHeader'
+import MyInput from '@/components/MyInput'
+import MyButton from '@/components/MyButton'
 
 const components = {
-    MyHeader
+    MyHeader,
+    MyInput,
+    MyButton
 }
 
 const install = function (Vue) {

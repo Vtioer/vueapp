@@ -1,0 +1,46 @@
+.my-button {
+    position: relative;
+    width: 100%;
+    height: 0.84rem;
+    border: none;
+    outline: none;
+    border-radius: 0.1rem;
+    font-size: 0.28rem;
+    &::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        border: inherit;
+        border-color: #000;
+        border-radius: inherit;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        content: " ";
+    }
+    &:active::before {
+        opacity: 0.1;
+    }
+}
+.primary {
+    color: $main-reverse-font-color;
+    background-color: $main-color;
+}
+.success {
+    color: $main-reverse-font-color;
+    background-color: $success-color;
+}
+.info {
+    color: $main-reverse-font-color;
+    background-color: $info-color;
+}
+.warning {
+    color: $main-reverse-font-color;
+    background-color: $warning-color;
+}
+.danger {
+    color: $main-reverse-font-color;
+    background-color: $danger-color;
+}
