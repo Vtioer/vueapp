@@ -9,7 +9,7 @@ export default {
     methods: {
         handleLogin() {
             console.log('login')
-            this.$router.push({ name: 'Home' })
+            this.$router.replace({ name: 'Home' })
         }
     }
 };
