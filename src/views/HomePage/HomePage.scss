@@ -1,0 +1,32 @@
+.home-page {
+    height: 100%;
+    width: 100%;
+}
+.top-search-wrap {
+    height: 1.4rem;
+    padding-top: 0.5rem;
+    background-color: #4e6ef2;
+    .top-search {
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 0.6rem;
+        border-radius: 0.6rem;
+        padding: 0 0.3rem;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+    input {
+        flex: 1;
+        border: none;
+        padding: 0 0.3rem;
+    }
+    i {
+        color: #a7aaaf;
+        font-size: 0.3rem;
+    }
+}
+.container {
+    height: calc(100% - 1.4rem);
+}

@@ -1,11 +1,13 @@
 import MyHeader from '@/components/MyHeader'
 import MyInput from '@/components/MyInput'
 import MyButton from '@/components/MyButton'
+import MyNavtab from '@/components/MyNavtab/MyNavtab.vue'
 
 const components = {
     MyHeader,
     MyInput,
-    MyButton
+    MyButton,
+    MyNavtab
 }
 
 const install = function (Vue) {
