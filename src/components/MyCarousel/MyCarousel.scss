@@ -1,0 +1,32 @@
+.carousel-panel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.control {
+    position: absolute;
+    height: 0.4rem;
+    width: 0.4rem;
+    top: 50%;
+    z-index: 10;
+    line-height: 0.4rem;
+    text-align: center;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 0.3rem;
+}
+
+.control-left {
+    left: 10px;
+}
+
+.control-right {
+    right: 10px;
+}

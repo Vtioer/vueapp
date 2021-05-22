@@ -6,7 +6,7 @@ export default {
     },
     data() {
         return {
-            placeholder: '搜索酒店，景区，民宿，美食'
+            placeholder: '搜索酒店、景区、民宿、美食'
         }
     }
 };

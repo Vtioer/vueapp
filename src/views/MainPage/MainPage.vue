@@ -87,8 +87,8 @@
             src="https://dimg04.c-ctrip.com/images/0703h120008l650b72D9D.jpg?proc=limitsize/s_66539,CEC6"
             alt=""
           />
-          <p class="live-desc">¥1200</p>
         </div>
+        <p class="live-desc">¥1200</p>
       </div>
       <div class="special-sale-featured-item">
         <div class="title">
@@ -97,15 +97,37 @@
         </div>
         <div class="special-featured">
           <div class="special-item">
-            <img src="https://dimg04.c-ctrip.com/images/02057120008ezz59649C5_D_280_280_R5.jpg" alt="" />
+            <img
+              class="img-item"
+              src="https://dimg04.c-ctrip.com/images/02057120008ezz59649C5_D_280_280_R5.jpg"
+            />
             <p>乐园酒店榜</p>
           </div>
           <div class="featured-item">
-            <img src="https://dimg04.c-ctrip.com/images/0203b120008kt651t76ED_D_280_280_R5.jpg" alt="" />
+            <img
+              class="img-item"
+              src="https://dimg04.c-ctrip.com/images/0203b120008kt651t76ED_D_280_280_R5.jpg"
+            />
             <p>百星首发</p>
           </div>
         </div>
       </div>
+    </section>
+    <section class="carousel-wrap">
+      <MyCarousel :height="100">
+        <img
+          src="https://dimg04.c-ctrip.com/images/0zg62120008nvm6eiB1AC.jpg"
+          alt=""
+        />
+        <img
+          src="https://dimg04.c-ctrip.com/images/0zg5j120008g0tkrf3FAD.jpg"
+          alt=""
+        />
+        <img
+          src="https://dimg04.c-ctrip.com/images/0zg3p120008nymw8fB32D.jpg"
+          alt=""
+        />
+      </MyCarousel>
     </section>
   </div>
 </template>

@@ -3,10 +3,12 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import http from './http'
+import VuePrototype from './initVueMethods/VuePrototype'
 import customComps from '@/components';
 
 Vue.use(customComps);
 Vue.use(http);
+VuePrototype(Vue);
 Vue.config.productionTip = false;
 
 const setHtmlFontSize = () => {
