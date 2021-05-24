@@ -129,6 +129,10 @@
         />
       </MyCarousel>
     </section>
+
+    <section class="more-scenic">
+      <MyWaterfallsFlow :list="scenicList"></MyWaterfallsFlow>
+    </section>
   </div>
 </template>
 

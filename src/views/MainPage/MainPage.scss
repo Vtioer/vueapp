@@ -61,7 +61,7 @@
 }
 .special-sale-featured {
     width: 95%;
-    height: 2.6rem;
+    height: 2.8rem;
     display: flex;
     justify-content: space-between;
     margin: 10px auto 10px auto;
@@ -111,7 +111,7 @@
         img {
             height: 100%;
             width: auto;
-            border-radius: 10px;
+            border-radius: 5px;
             overflow: hidden;
         }
     }
@@ -138,7 +138,7 @@
         .img-item {
             height: 100%;
             width: auto;
-            border-radius: 10px;
+            border-radius: 5px;
             overflow: hidden;
         }
         p {
@@ -156,7 +156,7 @@
         .img-item {
             height: 100%;
             width: auto;
-            border-radius: 10px;
+            border-radius: 5px;
             overflow: hidden;
         }
         p {
@@ -172,4 +172,9 @@
     margin: 10px auto 10px auto;
     border-radius: 10px;
     overflow: hidden;
+}
+.more-scenic {
+    width: 100%;
+    height: auto;
+    margin: 10px auto 10px auto;
 }

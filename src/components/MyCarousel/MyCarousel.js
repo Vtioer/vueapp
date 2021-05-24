@@ -52,7 +52,7 @@ export default {
                 let style = ele.elm.style;
                 style.height = "100%";
                 style.width = "100%";
-                if (index == 0) {
+                if (index == this.currIndex) {
                     style[this._direction] = "0%"
                 } else {
                     style[this._direction] = "100%"
@@ -111,9 +111,8 @@ export default {
                     } else {
                         style[this._direction] = `${offset + 100}%`
                     }
-
                 })
-            })
+            },30)
 
         },
 
@@ -132,7 +131,7 @@ export default {
                 this.stopCarousel();
                 this.handleMove(type);
                 this.autoplay && this.startWhirl();
-            }, 700)
+            }, 300)
 
         },
     },

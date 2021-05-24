@@ -1,0 +1,36 @@
+.waterfull {
+    height: auto;
+    width: 100%;
+}
+.v-waterfall-content {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.v-waterfall-item {
+    float: left;
+    position: absolute;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 12px 0 rgba($color: #000000, $alpha: 0.2);
+}
+.v-waterfall-item img {
+    width: 100%;
+    height: auto;
+}
+.title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+    margin: 4px;
+}
+.subtitle {
+    font-size: 12px;
+    line-height: 18px;
+    color: #9e9e9e;
+    margin: 4px;
+    padding-bottom: 6px;
+    text-overflow: ellipsis; /* 文本溢出时显示省略号来代表被修剪的文本 */
+    overflow: hidden; /* 溢出部分隐藏 */
+    line-clamp: 2;
+}

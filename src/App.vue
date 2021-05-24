@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <transition :name="transitionName">
-      <router-view />
+      <router-view v-if="isRouterAlive" />
     </transition>
   </div>
 </template>
@@ -9,9 +9,15 @@
 <script>
 export default {
   name: "App",
+  provide() {
+    return {
+      reloadApp: this.reloadApp,
+    };
+  },
   data() {
     return {
       transitionName: "slide-left",
+      isRouterAlive: true,
     };
   },
   watch: {
@@ -27,6 +33,14 @@ export default {
         this.transitionName = "slide-left";
       }
       this.$router.isBack = false;
+    },
+  },
+  methods: {
+    reloadApp() {
+      this.isRouterAlive = false;
+      this.$nextTick(() => {
+        this.isRouterAlive = true;
+      });
     },
   },
 };
