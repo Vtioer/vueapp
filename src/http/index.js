@@ -2,6 +2,8 @@ import axios from "axios";
 import qs from "qs";
 // 在config.js文件中统一存放一些公共常量，方便之后维护
 import { baseURL, timeout } from "./config.js";
+// 设置'Content-Type'
+axios.defaults.headers.post['Content-Type'] = 'application/json'
 // 添加请求拦截器
 axios.interceptors.request.use(
     (config) => {

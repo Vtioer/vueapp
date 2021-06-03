@@ -1,6 +1,6 @@
 <template>
   <div class="waterfull">
-    <div class="v-waterfall-content" id="v-waterfall">
+    <div class="v-waterfall-content clearfix" id="v-waterfall">
       <div
         v-for="(img, index) in waterfallList"
         :key="index"
@@ -12,7 +12,7 @@
           height: img.height,
         }"
       >
-        <img :src="img.src" alt="" />
+        <img :src="img.src" alt=""/>
         <p class="title">
           {{ img.title }}
         </p>

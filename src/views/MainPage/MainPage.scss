@@ -1,7 +1,8 @@
 .main-page {
-    height: 100%;
+    position: relative;
+    height: auto;
     width: 100%;
-    overflow-y: auto;
+    overflow: hidden;
 }
 .quick-channel {
     height: 200px;

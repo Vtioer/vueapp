@@ -1,9 +1,11 @@
 import MyWaterfallsFlow from '@/components/MyWaterfallsFlow'
+import MyLoadmore from '../../components/MyLoadmore';
 
 export default {
     name: "MainPage",
     components: {
-        MyWaterfallsFlow
+        MyWaterfallsFlow,
+        MyLoadmore
     },
     data() {
         return {
@@ -31,6 +33,21 @@ export default {
 
     },
     methods: {
-
+        handleRefresh() {
+            // 模拟请求
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    resolve()
+                }, 500)
+            })
+        },
+        handleLoadMore() {
+            // 模拟请求
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    resolve()
+                }, 500)
+            })
+        }
     }
 };

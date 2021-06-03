@@ -66,7 +66,9 @@ export default {
         },
         //图片预加载
         imgPreloading() {
-            for (let i = 0; i < this.imgList.length; i++) {
+            let len = this.imgList.length;
+            let wrapdom = document.getElementById("v-waterfall");
+            for (let i = 0; i < len; i++) {
                 let aImg = new Image();
                 aImg.src = this.imgList[i].src;
                 aImg.onload = aImg.onerror = () => {
@@ -77,6 +79,10 @@ export default {
                     imgData.subtitle = this.imgList[i].subtitle;
                     this.waterfallList.push(imgData);
                     this.rankImg(imgData);
+
+                    if (i == len - 1) {
+                        wrapdom.style.height = imgData.height + imgData.top + 20 + 'px'
+                    }
                 };
             }
         },
@@ -87,7 +93,7 @@ export default {
             let minIndex = this.filterMin();
             imgData.top = overallHeight[minIndex];
             imgData.left = minIndex * (margin + imgWidth);
-            overallHeight[minIndex] += imgData.height + margin + 84; // 加了文字描述的盒子高度（预设84px）
+            overallHeight[minIndex] += imgData.height + margin + 74; // 加了文字描述的盒子高度（预设74px）
         },
         /**
          * 找到最短的列并返回下标
